@@ -151,3 +151,12 @@ do
 				system("pause");
 				system("cls");
 				break;
+			case2:
+				if (listEmpty())
+				{
+					cout << "List kosong" << endl;
+					system("pause");
+					system("cls");
+					break;
+				}
+
