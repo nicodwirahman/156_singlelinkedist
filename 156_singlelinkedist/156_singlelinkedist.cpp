@@ -136,11 +136,11 @@ do
 		try
 		{
 
-			int nim;
-			cout << "Masukkan NIM: ";
-			cin >> nim;
-			Node* currentNode = START;
-			while (currentNode != NULL) {
-				if (currentNode->noMhs == nim) {
-					cout << "NIM: " << currentNode->noMhs << ", Nama: " << currentNode->name << endl;
-					return;
+			cout << "1. Tambah Data" << endl;
+			cout << "2. Hapus Data" << endl;
+			cout << "3. Tampilkan Data" << endl;
+			cout << "4. Cari Data" << endl;
+			cout << "5. Keluar" << endl;
+			cout << "Pilihan: ";
+			cin >> pilihan;
+			switch (pilihan)
