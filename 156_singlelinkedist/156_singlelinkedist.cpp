@@ -128,3 +128,12 @@ void searchData() {
 		cout << "data tidak ditemukan" << endl;
 	}
 }
+
+int main() {
+	int pilihan;
+do
+	{
+		try
+		{
+
+			
