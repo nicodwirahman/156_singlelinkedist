@@ -160,3 +160,11 @@ do
 					break;
 				}
 
+				int nim;
+				cout << "masukkan NIM:";
+				cin >> nim;
+				if (deleteNode(nim)) {
+					cout << "nim: " << nim << "berhasil dihapus" << endl;
+					system("pause");
+					system("cls");
+				}
