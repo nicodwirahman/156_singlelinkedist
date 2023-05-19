@@ -106,14 +106,14 @@ void traverse() {
 	}
 
 
-void searchData (){
+void searchData() {
 	if (listEmpty()) {
 		cout << "List kosong" << endl;
 		system("pause");
 		system("cls");
 		return;
 	}
-	else{
+	else {
 		int nim;
 		cout << "Masukkan NIM: ";
 		cin >> nim;
@@ -122,4 +122,9 @@ void searchData (){
 			if (currentNode->noMhs == nim) {
 				cout << "NIM: " << currentNode->noMhs << ", Nama: " << currentNode->name << endl;
 				return;
-	
+			}
+			currentNode = currentNode->next;
+		}
+		cout << "data tidak ditemukan" << endl;
+	}
+}
