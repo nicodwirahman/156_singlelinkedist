@@ -131,7 +131,7 @@ void searchData() {
 
 int main() {
 	int pilihan;
-do
+	do
 	{
 		try
 		{
@@ -168,3 +168,25 @@ do
 					system("pause");
 					system("cls");
 				}
+				else
+					cout << " Data tidak ditemukan" << endl;
+				break;
+			case 3:
+				traverse();
+				break;
+			case 4:
+				searchData();
+				break;
+			case 5:
+				break;
+			default:
+				cout << "pilihan tidak ada" << endl;
+				break;
+			}
+		}
+		catch (exception e)
+		{
+			cout << "terjadi kesalahn" << endl;
+		}
+	} while (pilihan != 5);
+}
